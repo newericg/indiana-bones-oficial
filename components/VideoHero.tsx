@@ -8,7 +8,7 @@ const VideoHero = () => {
     </video> */}
       <Image
         id="background-video"
-        src="/winter-hero.jpg"
+        src="/hero-background-dark.jpg"
 				// fill
         width={5000}
         height={5000}

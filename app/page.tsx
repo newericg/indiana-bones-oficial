@@ -5,7 +5,7 @@ import Services from "@/components/Services";
 
 export default function Home() {
   return (
-    <main className="relative bg-white-100 flex justify-center items-center flex-col mx-auto sm:px-0 px-5 overflow-clip">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto px-0 overflow-clip">
       <div className="w-full video-bg">
         <NavbarMenu/>
         <Hero />

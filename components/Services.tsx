@@ -1,11 +1,31 @@
 import { ContainerScrollComponent } from "./ui/ContainerScroll";
+import { LampContainer } from "./ui/Lamp";
+import MagicButton from "./ui/MagicButton";
 import { ServicesParallax } from "./ui/ServicesParallax";
+
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Services = () => {
   return (
     <>
-      <section className="bg-white w-full">
-      < ServicesParallax products={products} />
+      <section className="bg-white dark:bg-black w-full">
+        <div className="my-10 w-3/4 flex m-auto">
+          <div className="w-1/2">
+            <LampContainer>
+              <h1 className="text-center text-7xl -mt-60">
+                We Are Accepting New Clients!
+              </h1>
+            </LampContainer>
+          </div>
+          <div className="flex justify-center align-middle w-1/2 my-auto">
+          <MagicButton
+            title="JOIN TEAM INDY"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
+          </div>
+        </div>
+        <ServicesParallax products={products} />
         <ContainerScrollComponent />
       </section>
     </>
@@ -14,98 +34,71 @@ const Services = () => {
 
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria1.jpg",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria2.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria3.jpg",
   },
- 
+
   {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria4.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria5.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
- 
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria6.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria7.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria8.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "",
+    link: "",
+    thumbnail: "/galeria2.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
- 
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "3",
+    link: "",
+    thumbnail: "/galeria3.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "1",
+    link: "",
+    thumbnail: "/galeria1.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "2",
+    link: "",
+    thumbnail: "/galeria2.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "3",
+    link: "",
+    thumbnail: "/galeria3.jpg",
   },
-]
+];
 
 export default Services;
